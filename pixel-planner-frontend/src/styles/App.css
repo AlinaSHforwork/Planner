@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #f7e7e8; /* A light pink background */
+    font-family: 'Press Start 2P', cursive;
+    color: #4a148c; /* Dark purple for text */
+}
+
+.pixel-btn {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #e91e63; /* Pink */
+    color: white;
+    border: 3px solid #ab003c;
+    border-radius: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px 0px #ab003c;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.pixel-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #ab003c;
+}
+
+.pixel-card {
+    background-color: #fce4ec; /* Light pink */
+    border: 3px solid #9c27b0; /* Purple border */
+    box-shadow: 6px 6px 0px 0px #7b1fa2; /* Darker purple shadow */
+    padding: 20px;
+    margin-bottom: 20px;
+}
