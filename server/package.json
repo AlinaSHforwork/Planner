@@ -18,9 +18,11 @@
   "homepage": "https://github.com/AlinaSHforwork/Planner#readme",
   "description": "",
   "dependencies": {
+    "@prisma/client": "^6.15.0",
     "bcryptjs": "^3.0.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.18.0"
+    "mongoose": "^8.18.0",
+    "prisma": "^6.15.0"
   }
 }
