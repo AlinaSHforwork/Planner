@@ -11,7 +11,7 @@ const LoginPage = () => {
     const onSubmit = async e => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+            const res = await axios.post('https://pixel-planner-backend.onrender.com/api/auth/login', formData);
             localStorage.setItem('token', res.data.token);
             navigate('/tasks');
         } catch (err) {

@@ -14,7 +14,7 @@ const TagsPage = () => {
             const token = localStorage.getItem('token');
             const config = { headers: { 'x-auth-token': token } };
             try {
-                const res = await axios.get('http://localhost:5000/api/tasks', config);
+                const res = await axios.get('tps://pixel-planner-backend.onrender.com/api/tasks', config);
                 setTasks(res.data);
                 const allTags = [...new Set(res.data.flatMap(task => task.tags))];
                 setTagsList(allTags);

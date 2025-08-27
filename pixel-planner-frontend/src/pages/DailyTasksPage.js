@@ -13,7 +13,7 @@ const DailyTasksPage = () => {
             const config = { headers: { 'x-auth-token': token } };
             try {
                 // Adjust this endpoint to filter by day on the backend
-                const res = await axios.get('http://localhost:5000/api/tasks', config);
+                const res = await axios.get('https://pixel-planner-backend.onrender.com/api/tasks', config);
                 setTasks(res.data);
             } catch (err) {
                 console.error(err);

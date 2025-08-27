@@ -15,7 +15,7 @@ const CalendarPage = () => {
             const token = localStorage.getItem('token');
             const config = { headers: { 'x-auth-token': token } };
             try {
-                const res = await axios.get('http://localhost:5000/api/tasks', config);
+                const res = await axios.get('https://pixel-planner-backend.onrender.com/api/tasks', config);
                 setTasks(res.data);
             } catch (err) {
                 console.error(err);

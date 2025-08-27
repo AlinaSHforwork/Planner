@@ -16,7 +16,7 @@ const AccountPage = () => {
 
             try {
                 // Assuming you have an API endpoint to get user data
-                const res = await axios.get('http://localhost:5000/api/auth/me', {
+                const res = await axios.get('https://pixel-planner-backend.onrender.com/api/auth/me', {
                     headers: { 'x-auth-token': token }
                 });
                 setUser(res.data);
